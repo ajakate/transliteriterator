@@ -38,10 +38,12 @@ class TranslApp < Sinatra::Base
   }
   
   get '/' do
-    #@unit = Remarkt::Unit.new
-    #@unit.vin = "123"
-
     slim :index
   end
+
+  post '/' do
+  @query =  params[:query]
+  slim :result
+end
 
 end
