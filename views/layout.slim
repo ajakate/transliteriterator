@@ -1,0 +1,33 @@
+doctype html
+== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
+== "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 9 ]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->"
+== "<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->"
+
+head
+  title Transliteriterator
+
+  == "<!--[if lt IE 9]>#{js :html5shiv}<![endif]-->"
+  
+  meta charset="utf-8"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+  
+  link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"
+  == css :app, media: 'screen'
+  
+  //script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
+
+  == js :app
+
+body
+  .container
+
+    header
+      ul.nav.nav-pills.pull-right
+        li
+          a href="/" Home
+      h3.text-muted Transliteriterator
+      
+    == yield

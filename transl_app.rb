@@ -42,8 +42,8 @@ class TranslApp < Sinatra::Base
   end
 
   post '/' do
-  @query =  params[:query]
-  slim :result
-end
+    @query =  params[:query]
+    slim :result
+  end
 
 end

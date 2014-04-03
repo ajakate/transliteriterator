@@ -6,6 +6,7 @@ gem 'rake'
 gem 'slim'
 gem 'unicorn'
 gem 'sinatra'
+gem 'tilt', '~> 1.4.1'
 
 gem 'sinatra-assetpack', '0.1.5'
 gem 'coffee-script'
